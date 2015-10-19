@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "babel-node index.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js 'test/**/*.@(js|jsx)'",
     "test:watch": "npm run test -- --watch"
   },
@@ -23,6 +24,8 @@
   "dependencies": {
     "immutable": "^3.7.5",
     "react": "^0.14.0",
-    "react-dom": "^0.14.0"
+    "react-addons-pure-render-mixin": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "react-router": "^1.0.0-rc3"
   }
 }
